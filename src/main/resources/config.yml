@@ -1,0 +1,4 @@
+fee: 100
+successMessage: "Thank you for using EnderBank!"
+failureMessage: "We're sorry but you do not have the required funds to use EnderBank!"
+permissionsMessage: "We're sorry but you do not have the required permissions to use EnderBank!"
