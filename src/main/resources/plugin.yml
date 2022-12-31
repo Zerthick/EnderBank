@@ -4,5 +4,6 @@ main: io.github.zerthick.enderbank.EnderBank
 api-version: 1.19
 authors: [ Zerthick ]
 description: A simple paper plugin to turn ender chests into banks with a fee.
+website: https://github.com/Zerthick/EnderBank
 depend:
   - Vault
