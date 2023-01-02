@@ -10,7 +10,7 @@ import java.util.logging.Logger;
 public final class EnderBank extends JavaPlugin {
 
     private static Economy econ;
-    private final Logger logger;
+    private Logger logger;
     private ConfigurationSettings configurationSettings;
     private TextComponents textComponents;
 
