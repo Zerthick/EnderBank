@@ -37,12 +37,12 @@ public final class EnderBank extends JavaPlugin {
             return;
         }
 
-        this.saveDefaultConfig();
-        this.configurationSettings = new ConfigurationSettings(this.getConfig());
+        saveDefaultConfig();
+        configurationSettings = new ConfigurationSettings(getConfig());
 
-        this.textComponents = new TextComponents(this);
+        textComponents = new TextComponents(this);
 
-        this.getServer().getPluginManager().registerEvents(new EnderBankListener(this), this);
+        getServer().getPluginManager().registerEvents(new EnderBankListener(this), this);
 
         logger.info(String.format("%s version %s by %s enabled!", getDescription().getName(), getDescription().getVersion(), getDescription().getAuthors()));
     }

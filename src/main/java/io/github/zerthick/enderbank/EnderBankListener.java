@@ -16,7 +16,7 @@ public class EnderBankListener implements Listener {
 
     public EnderBankListener(EnderBank instance) {
         this.instance = instance;
-        this.textComponents = instance.getTextComponents();
+        textComponents = instance.getTextComponents();
         econ = EnderBank.getEcon();
     }
 
@@ -29,7 +29,7 @@ public class EnderBankListener implements Listener {
                     player.sendMessage(textComponents.renderSuccessMessageWithoutFee());
                 } else {
                     double balance = econ.getBalance(player);
-                    double fee = this.instance.getConfigurationSettings().fee;
+                    double fee = instance.getConfigurationSettings().fee;
                     if (balance > fee) {
                         EconomyResponse economyResponse = econ.withdrawPlayer(player, fee);
 
