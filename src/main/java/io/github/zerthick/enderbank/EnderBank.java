@@ -10,7 +10,7 @@ import java.util.logging.Logger;
 public final class EnderBank extends JavaPlugin {
 
     private static Economy econ;
-    private final Logger logger = getLogger();
+    private final Logger logger;
     private ConfigurationSettings configurationSettings;
     private TextComponents textComponents;
 
@@ -28,6 +28,8 @@ public final class EnderBank extends JavaPlugin {
 
     @Override
     public void onEnable() {
+        logger = getLogger();
+
         // Plugin startup logic
         if (!setupEconomy()) {
             logger.severe(String.format("[%s] - Disabled due to no Vault dependency found!", getDescription().getName()));
