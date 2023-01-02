@@ -1,7 +1,6 @@
 package io.github.zerthick.enderbank;
 
 import net.milkbowl.vault.economy.Economy;
-import org.bukkit.Bukkit;
 import org.bukkit.plugin.RegisteredServiceProvider;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -10,8 +9,8 @@ import java.util.logging.Logger;
 
 public final class EnderBank extends JavaPlugin {
 
-    private static final Logger logger = Bukkit.getLogger();
     private static Economy econ;
+    private final Logger logger = getLogger();
     private ConfigurationSettings configurationSettings;
     private TextComponents textComponents;
 
